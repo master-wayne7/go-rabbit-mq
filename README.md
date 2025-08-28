@@ -9,8 +9,8 @@ Files in this repo:
 - [receive/receive.go](receive/receive.go)
 
 Quick overview:
-- Sender: [`send.main`](send/send.go) sends a single message ("Hello World!") to the `hello` queue using [`send.failOnError`](send/send.go).
-- Receiver: [`receive.main`](receive/receive.go) consumes messages from the `hello` queue and logs them using [`receive.failOnError`](receive/receive.go).
+- Sender: [`send.main`](send/send.go) sends a single message ("Hello World!") to the `hello` queue using [`PublishWithcontext`](send/send.go).
+- Receiver: [`receive.main`](receive/receive.go) consumes messages from the `hello` queue and logs them using [`Consume`](receive/receive.go).
 
 Requirements
 - Go (see [go.mod](go.mod))
